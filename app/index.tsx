@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from "react-native";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
-export default function App() {
+function App() {
     return (
         <View style={styles.container}>
             <View style={styles.headerContainer}>
@@ -30,6 +30,11 @@ export default function App() {
 
     )
 }
+
+export const options = {
+    headerShown: false,
+  };
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -84,3 +89,5 @@ const styles = StyleSheet.create({
     },
 
 })
+
+export default App;
